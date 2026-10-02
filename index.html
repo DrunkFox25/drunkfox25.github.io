@@ -1,13 +1,258 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 <title>Drunk Fox Homepage</title>
+<style>
+
+body {
+  padding-top: 50px;
+}
+
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+}
+
+ul.navbar > li {
+  float: left;
+}
+
+.navbar > li > a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar {
+  background-color: #075404;
+}
+.navbar > li > a:hover, .dropdown:hover .dropbtn {
+  background-color: #053603;
+}
+
+.navbar > li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: relative;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.dropdown-content a img{
+  height: 24px;
+}
+
+
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+.page-section {
+  display: none;
+}
+/*
+.page-section:first-child {
+  display: block;
+}
+
+:target ~ .page-section:first-child,
+.page-section:first-child:target {
+  display: none;
+}*/
+
+.page-section:target {
+  display: block !important;
+}
+
+</style>
+
+<meta http-equiv="refresh" content="0;url=#home"/>
 </head>
 <body>
-<h1>Github</h1>
-  <a href="https://github.com/DrunkFox25">Github homepage</a>
-<h1>Repositories</h1>
-  <a href="https://drunkfox25.github.io/drunkfox.github.io/">Homepage</a><br>
-  <a href="https://github.com/DrunkFox25/cutillib">cutillib library project</a>
+
+<ul class="navbar">
+  <li style="float: left;"><a href="#home">Home</a></li>
+  <li style="float: left;"><a href="#olympiads">Olympiads</a></li>
+  <li style="float: left;"><a href="#projects">Projects</a></li>
+  <li class="dropdown" style="float: right;">
+    <a href="javascript:void(0)" class="dropbtn">Links</a>
+    <div class="dropdown-content">
+      <a href="https://github.com/DrunkFox25"
+        target="_blank"
+        rel="noopener noreferrer" 
+        style="text-decoration: none; color: #333333; text-decoration: underline; color: #a6ce39;">
+          <img src="https://raw.githubusercontent.com/primer/octicons/refs/heads/main/icons/mark-github-24.svg" alt="Github Logo"/>
+      </a>
+      <a href="https://orcid.org/0009-0003-9239-1597"
+        target="_blank"
+        rel="noopener noreferrer" 
+        style="text-decoration: none; color: #333333; text-decoration: underline; color: #a6ce39;">
+          <img src="https://raw.githubusercontent.com/ORCID/orcid-angular/refs/heads/main/src/assets/img/orcid-og-image.png" alt="ORCID iD icon"/>
+      </a>
+      <a href="https://www.instagram.com/aravin_peter/"
+        target="_blank"
+        rel="noopener noreferrer" 
+        style="text-decoration: none; color: #333333; text-decoration: underline; color: #a6ce39;">
+          <img src="https://raw.githubusercontent.com/CLorant/readme-social-icons/refs/heads/main/large/colored/instagram.svg" alt="Instagrma logo"/>
+      </a>
+      <a href="https://www.youtube.com/@CharcoalMath"
+        target="_blank"
+        rel="noopener noreferrer" 
+        style="text-decoration: none; color: #333333; text-decoration: underline; color: #a6ce39;">
+          <img src="https://raw.githubusercontent.com/CLorant/readme-social-icons/refs/heads/main/large/colored/youtube.svg"/>
+      </a>
+    </div>
+  </li>
+</ul>
+
+
+<main class="content">
+  <section id="home" class="page-section">
+    <p>
+      I am Aravin Peter (a.k.a. Peter Aravin, Aravin Péter, Пётр Алексеевич Аравин). I do competitive math and programming, and have been at the respective olympiads for the Hungarian team.
+      I am an avid collector of Jane street shirts through these compititions.
+      I can only realy say I program in C++, but I somewhat know C, js.
+      Arch BTW.
+    </p>
+
+    <ul>
+      <li title="Budapesti Fazekas Mihály Gyakorló Általános Iskola és Gimnázium">
+        <a href="https://fazekas.hu/"
+          target="_blank"
+          rel="noopener noreferrer">
+          FMG
+        </a>
+      </li>
+      <li title="Matematikai Mulatságok Tábora">
+        <a href="https://agondolkodasorome.hu/tevekenysegeink/mamut/"
+          target="_blank"
+          rel="noopener noreferrer">
+          MaMuT
+        </a>
+      </li>
+      <li title="Középiskolai Matematikai és Fizikai Lapok Informatika rovattal">
+        <a href="https://komal.hu"
+          target="_blank"
+          rel="noopener noreferrer">
+          KöMaL
+        </a>
+      </li>
+      <li title="this is my dog, this isn't some acronym">
+        <a href="https://github.com/DrunkFox25/ProjectCompramise/blob/c373785b5c62b170b10fde1fb0b597bb315ae470/assets/image11.png"
+          target="_blank"
+          rel="noopener noreferrer">
+          BUKA
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <section id="olympiads" class="page-section">
+    <style>
+      talbe, tr, th {
+        border: 1px solid black;
+      }
+    </style>
+    <table>
+      <tr>
+        <th>Year</th>
+        <th>2025</th>
+        <th>2026</th>
+        <th>2027</th>
+        <th>2028</th>
+        <th>2029</th>
+      </tr>
+      <tr>
+        <th>EJOI</th>
+        <th>Silver</th>
+        <th>Gold</th>
+        <th>-</th>
+        <th>-</th>
+        <th>-</th>
+      </tr>
+      <tr>
+        <th>CEOI</th>
+        <th>-</th>
+        <th>-</th>
+        <th>?</th>
+        <th>?</th>
+        <th>?</th>
+      </tr>
+      <tr>
+        <th>IOI</th>
+        <th>-</th>
+        <th>-</th>
+        <th>?</th>
+        <th>?</th>
+        <th>?</th>
+      </tr>
+      <tr>
+        <th>IMO</th>
+        <th>-</th>
+        <th>Bronze</th>
+        <th>?</th>
+        <th>?</th>
+        <th>?</th>
+      </tr>
+    </table>
+  </section>
+
+  <section id="projects" class="page-section">
+    <h3><a href="https://github.com/DrunkFox25/drunkfox25.github.io">Homepage</a></h3>
+    <p>
+      This is so that I don't have to update all my links.
+    </p>
+    <h3><a href="https://github.com/DrunkFox25/cutillib">cutillib library project</a></h3>
+    <p>
+      Old Code I uploaded to github.
+    </p>
+    <h3><a href="https://drunkfox25.github.io/ProjectCompramise/">Project Compramise</a></h3>
+    <p>
+      Joke website I created, but has become useful for accessing some of it's assets on other computers.
+    </p>
+    <h3><a href="https://github.com/DrunkFox25/another_graph_editor">Another Graph Editor Fork</a></h3>
+    <p>
+      Wanted to add link based sharing to Another Graph Editor but instead learned to hate React.
+    </p>
+    <h3><a href="https://github.com/DrunkFox25/Chess-Clock">Chess Clock</a></h3>
+    <p>
+      Simple chess clock for school because they don't allow phones and don't have money for clocks.
+    </p>
+    <h3><a href="https://github.com/DrunkFox25/Georg">Georg</a></h3>
+    <p>
+      This is my current project as of writing this, it is meant to be a superset of geogebra. I had the original idea before, but developement started when someone at IMO suggested the same idea. It is a Qt based geogebraesc program, based on a polynomial solver and expression to asm converter Holomorph Engine.
+    </p>
+  </section>
+</main>
+
+
 </body>
 </html>
+
+
