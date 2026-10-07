@@ -25,18 +25,40 @@ ul.navbar > li {
   float: left;
 }
 
-.navbar > li > a, .dropbtn {
+.navbar > li {
+  padding: 0px;
+  height: 50px;
   display: inline-block;
-  color: white;
   text-align: center;
-  padding: 14px 16px;
+}
+
+.navbar > li span {
+  color: white;
+  padding: 10px;
+  font-size: 30px;
+  text-decoration: none;
+  z-index: 100;
+}
+
+.navbar > li img {
+  color: white;
+  padding: 5px;
+  font-size: 40px;
+  height: 40px;
   text-decoration: none;
 }
 
+
 .navbar {
   background-color: #075404;
+  text-decoration: none;
 }
-.navbar > li > a:hover, .dropdown:hover .dropbtn {
+
+.navbar * {
+  text-decoration: none;
+}
+
+.navbar > li:hover{
   background-color: #053603;
 }
 
@@ -45,6 +67,7 @@ ul.navbar > li {
 }
 
 .dropdown-content {
+  color: black;
   display: none;
   position: relative;
   background-color: #f9f9f9;
@@ -53,15 +76,11 @@ ul.navbar > li {
 }
 
 .dropdown-content a {
-  color: black;
   padding: 12px 16px;
-  text-decoration: none;
+  text-decoration: underline;
+  color: #a6ce39;
   display: block;
   text-align: center;
-}
-
-.dropdown-content a img{
-  height: 24px;
 }
 
 
@@ -72,69 +91,49 @@ ul.navbar > li {
   display: block;
 }
 
-
 .page-section {
   display: none;
 }
-/*
-.page-section:first-child {
-  display: block;
-}
-
-:target ~ .page-section:first-child,
-.page-section:first-child:target {
-  display: none;
-}*/
 
 .page-section:target {
   display: block !important;
 }
 
 </style>
-
-<meta http-equiv="refresh" content="0;url=#home"/>
+<script>if(!window.location.hash) window.location.hash = '#home';</script>
 </head>
 <body>
 
 <ul class="navbar">
-  <li style="float: left;"><a href="#home">Home</a></li>
-  <li style="float: left;"><a href="#olympiads">Olympiads</a></li>
-  <li style="float: left;"><a href="#projects">Projects</a></li>
-  <li class="dropdown" style="float: right;">
-    <a href="javascript:void(0)" class="dropbtn">Links</a>
+  <li style="float: left;"><a href="#home"><span>Home</span></a></li>
+  <li style="float: left;"><a href="#olympiads"><span>Olympiads</span></a></li>
+  <li style="float: left;"><a href="#projects"><span>Projects</span></a></li>
+  <li style="float: left;"><a href="#shader"><span>Shader</span></a></li>
+  <li style="float: right;" class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn"><span>I need to justify the pain an suffering of making this dropdown</span></a>
     <div class="dropdown-content">
-      <a href="https://github.com/DrunkFox25"
+      <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
         target="_blank"
-        rel="noopener noreferrer" 
-        style="text-decoration: none; color: #333333; text-decoration: underline; color: #a6ce39;">
-          <img src="https://raw.githubusercontent.com/primer/octicons/refs/heads/main/icons/mark-github-24.svg" alt="Github Logo"/>
+        rel="noopener noreferrer">
+          vid #1
       </a>
-      <a href="https://orcid.org/0009-0003-9239-1597"
+      <a href="https://www.youtube.com/watch?v=fMCN-b0ic_k"
         target="_blank"
-        rel="noopener noreferrer" 
-        style="text-decoration: none; color: #333333; text-decoration: underline; color: #a6ce39;">
-          <img src="https://raw.githubusercontent.com/ORCID/orcid-angular/refs/heads/main/src/assets/img/orcid-og-image.png" alt="ORCID iD icon"/>
+        rel="noopener noreferrer">
+          vid #1
       </a>
-      <a href="https://www.instagram.com/aravin_peter/"
+      <a href="https://www.youtube.com/watch?v=llqWTJGUFeE"
         target="_blank"
-        rel="noopener noreferrer" 
-        style="text-decoration: none; color: #333333; text-decoration: underline; color: #a6ce39;">
-          <img src="https://raw.githubusercontent.com/CLorant/readme-social-icons/refs/heads/main/large/colored/instagram.svg" alt="Instagrma logo"/>
-      </a>
-      <a href="https://www.youtube.com/@CharcoalMath"
-        target="_blank"
-        rel="noopener noreferrer" 
-        style="text-decoration: none; color: #333333; text-decoration: underline; color: #a6ce39;">
-          <img src="https://raw.githubusercontent.com/CLorant/readme-social-icons/refs/heads/main/large/colored/youtube.svg"/>
-      </a>
-      <a href="https://lichess.org/@/peteraravin"
-        target="_blank"
-        rel="noopener noreferrer" 
-        style="text-decoration: none; color: #333333; text-decoration: underline; color: #a6ce39;">
-          <img src="https://raw.githubusercontent.com/lichess-org/lila/refs/heads/master/public/logo/lichess.svg"/>
+        rel="noopener noreferrer">
+          vid #1
       </a>
     </div>
   </li>
+  <li style="float: right;" title="lichess"><a href="https://lichess.org/@/peteraravin" target="_blank" rel="noopener noreferrer"><img src="https://raw.githubusercontent.com/lichess-org/lila/refs/heads/master/public/logo/lichess.svg" alt="Lichess Logo"/></a></li>
+  <li style="float: right;" title="youtube"><a href="https://www.youtube.com/@CharcoalMath" target="_blank" rel="noopener noreferrer"><img src="https://raw.githubusercontent.com/CLorant/readme-social-icons/refs/heads/main/large/colored/youtube.svg" alt="Youtube Logo"/></a></li>
+  <li style="float: right;" title="insta"><a href="https://www.instagram.com/aravin_peter/" target="_blank" rel="noopener noreferrer"><img src="https://raw.githubusercontent.com/CLorant/readme-social-icons/refs/heads/main/large/colored/instagram.svg" alt="Instagrma Logo"/></a></li>
+  <li style="float: right;" title="orcid"><a href="https://orcid.org/0009-0003-9239-1597" target="_blank" rel="noopener noreferrer"><img src="https://raw.githubusercontent.com/ORCID/orcid-angular/refs/heads/main/src/assets/img/orcid-og-image.png" alt="ORCID iD Icon"/></a></li>
+  <li style="float: right;" title="github"><a href="https://github.com/DrunkFox25" target="_blank" rel="noopener noreferrer"><img src="https://raw.githubusercontent.com/primer/octicons/refs/heads/main/icons/mark-github-24.svg" alt="Github Logo"/></a></li>
 </ul>
 
 
@@ -230,35 +229,56 @@ ul.navbar > li {
   </section>
 
   <section id="projects" class="page-section">
-    <h3><a href="https://github.com/DrunkFox25/drunkfox25.github.io">Homepage</a></h3>
+    <h3><a href="https://github.com/DrunkFox25/drunkfox25.github.io"
+      target="_blank"
+      rel="noopener noreferrer">Homepage</a></h3>
     <p>
       This is so that I don't have to update all my links.
     </p>
-    <h3><a href="https://github.com/DrunkFox25/cutillib">cutillib library project</a></h3>
+    <h3><a href="https://github.com/DrunkFox25/cutillib"
+      target="_blank"
+      rel="noopener noreferrer">cutillib library project</a></h3>
     <p>
       Old Code I uploaded to github.
     </p>
-    <h3><a href="https://drunkfox25.github.io/ProjectCompramise/">Project Compramise</a></h3>
+    <h3><a href="https://drunkfox25.github.io/ProjectCompramise/"
+      target="_blank"
+      rel="noopener noreferrer">Project Compramise</a></h3>
     <p>
       Joke website I created, but has become useful for accessing some of it's assets on other computers.
     </p>
-    <h3><a href="https://github.com/DrunkFox25/another_graph_editor">Another Graph Editor Fork</a></h3>
+    <h3><a href="https://github.com/DrunkFox25/another_graph_editor"
+      target="_blank"
+      rel="noopener noreferrer">Another Graph Editor Fork</a></h3>
     <p>
       Wanted to add link based sharing to Another Graph Editor but instead learned to hate React.
     </p>
-    <h3><a href="https://github.com/DrunkFox25/Chess-Clock">Chess Clock</a></h3>
+    <h3><a href="https://github.com/DrunkFox25/Chess-Clock"
+      target="_blank"
+      rel="noopener noreferrer">Chess Clock</a></h3>
     <p>
       Simple chess clock for school because they don't allow phones and don't have money for clocks.
     </p>
-    <h3><a href="https://github.com/DrunkFox25/Georg">Georg</a></h3>
+    <h3><a href="https://github.com/DrunkFox25/Georg"
+      target="_blank"
+      rel="noopener noreferrer">Georg</a></h3>
     <p>
       This is my current project as of writing this, it is meant to be a superset of geogebra. I had the original idea before, but developement started when someone at IMO suggested the same idea. It is a Qt based geogebraesc program, based on a polynomial solver and expression to asm converter Holomorph Engine.
     </p>
+  </section>
+
+  <section id="shader" class="page-section">
+    <h3>This is a shader I made on <a href = "https://www.shadertoy.com/"
+      target="_blank"
+      rel="noopener noreferrer">Shadertoy</a>
+    here's my <a href = "https://www.shadertoy.com/user/Drunk_Fox"
+      target="_blank"
+      rel="noopener noreferrer">profile</a>
+    .</h3>
+    <iframe width="640" height="360" frameborder="0" src="https://www.shadertoy.com/embed/7XKGW3?gui=true&t=10&paused=true&muted=false" allowfullscreen></iframe>
   </section>
 </main>
 
 
 </body>
 </html>
-
-
